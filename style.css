@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --bg-color: #091a2f;
+    --acc-color: #6fffe9;
+    --ft-fml: "Josefin Sans", sans-serif;
+    --ft-mono: "Source Code Pro", monospace;
+}
+
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    
+    width: 100vw;
+    height: auto;
+    font-family: var(--ft-fml);
+}
+
+body{
+    background-color: var(--bg-color);
+    
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+.nav{
+    font-family: var(--ft-mono);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 3em;
+    counter-reset: link-no;
+    padding-right: 5rem;
+}
+
+.nav a::before{
+    content: counter(link-no, decimal-leading-zero) ". ";
+    position: relative;
+    left: 0;
+    color: var(--acc-color); /* marker color */
+    font-weight: bold;
+}
+
+.nav>li{
+    display: block;
+    color: white;
+}
+
+
+.nav a{
+    counter-increment: link-no;
+
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
