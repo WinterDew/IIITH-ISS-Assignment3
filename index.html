@@ -4,26 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Tatva Agarwal | Winterdew</title>
 </head>
 <body>
-    <header>
+    <a id="up-arr" href="#header">↑</a>
+    <header id="header">
         <div class="logo">
             <img src="assets/logo-image.png" alt="">
             Winterdew <span>Studio</span>
         </div>
         <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#">Resume</a></li>
         </ul>
     </header>
-    <section class="about">
-        <h1 class="heading"></h1>
-        <img src="" alt="" id="profile">
-        <p class="about-me"></p>
+    <section class="home" id="home">
+        <div class="left">
+            <h1 class="heading">Hello!</h1>
+            <p class="about-me">I am <span>Tatva Agarwal</span>,<br> A software, electronics,<br>
+                art and applied science enthusiast.
+            </p>
+            <a href="#about">Know More!</a>
+        </div>
+        <div class="right"><img src="assets/profile photo.png" alt="" id="profile"></div>
+    </section>
+    <section class="about" id="about">
+        <div class="details">
+            <h1>About Me</h1><br>
+            Hi, I am <span>Tatva Agarwal</span>, I am an undergrad student at <a href="https://iiit.ac.in" target="_blank">IIIT Hyderabad</a>. 
+            <br><br>I live in Jagdalpur, Chhattisgarh, India. And I like working on software and electronics projects. I also do 3d design in Blender, Sketching, and Creative coding.
+            <br><br>I like playing Chess, Badminton, and Table Tennis. And watch F1. I like Applied Physics and Chemistry along with Microbiology and Medicine.
+        </div>
+        <div class="image-slide">
+            <img src="https://placehold.co/600x400" alt="">
+            <img src="https://placehold.co/600x400" alt="">
+            <img src="https://placehold.co/600x400" alt="">
+            <img src="https://placehold.co/600x400" alt="">
+            <img src="https://placehold.co/600x400" alt="">
+        </div>
+        
     </section>
 
+    <section class="achievements" id="achievements">
+        <div class="left">
+            <h1>Achievements & Education</h1><br>
+            <ul>
+                <li><strong>(2022)</strong> Schooling done till Class 10th in Nirmal Higher Secondary School, Jagdalpur</li>
+                <li><strong>(2022-24)</strong> Class 11th - 12th in GVN School, Bhopal</li>
+                <li><strong>(2024)</strong> JEE Mains - 7k Rank</li>
+                <li><strong>(2024)</strong> JEE Adv. - 5k Rank</li>
+                <li><strong>(2024)</strong> Joined IIIT-H for BTech (Computer Science) + MS</li>
+                <li><strong>(2025)</strong> Semester 1 completed with 9+ GPA</li>
+            </ul>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="left">
+            <h1>Skills</h1><br>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-blender-original"></i>
+            <i class="devicon-electron-original"></i>
+            <i class="devicon-flutter-plain"></i>
+            <i class="devicon-tailwindcss-plain"></i>
+            <i class="devicon-photoshop-plain" style="color: white"></i>
+            <i class="devicon-processing-plain-wordmark"></i>
+            <i class="devicon-go-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-c-plain colored"></i>
+            <i class="devicon-godot-plain colored"></i>
+            <i class="devicon-opengl-plain colored"></i> <!-- closest to GLSL ;-; -->
+            <i class="devicon-arduino-plain-wordmark"></i>
+            
+        </div>
+        <div class="right">
+            Python, Web Technologies, JS Frameworks, Blender, Creative coding environments like Processing, Game engines like Godot are some of the Technical Skills I possess.
+            <br><br>
+            I also have skill in understanding mechanical systems and Electronics.
+            <br><br>
+            I am also decently skilled at design. I have keen interest in photography and I can play the piano.
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="socials">
+            <span>Reach me via: </span> 
+            <a href="https://example.com"><i class="fab fa-github"></i></a>
+            <a href="https://example.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://example.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="email">
+            <a href="mailto:winterdew.studio@gmail.com">Mail Me @ winterdew.studio@gmail.com</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; <span id="footer-date"></span> Tatva Agarwal (WinterdewStudio). Built with passion, care and ☕.</p>
+    </footer>
+    <script>document.getElementById("footer-date").innerText = new Date().getFullYear()</script>
 </body>
 </html>
