@@ -6,24 +6,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="main.js" defer></script>
     <title>Tatva Agarwal | Winterdew</title>
 </head>
 <body>
-    <a id="up-arr" href="#header">↑</a>
-    <header id="header">
+    <a id="up-arr" href="#home">↑</a>
+    <header id="home">
+                  
         <div class="logo">
             <img src="assets/logo-image.png" alt="">
             Winterdew <span>Studio</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <ul class="nav">
             <li><a href="#about">About</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="tokenizer.html">Tokenizer</a></li>
+            <li><a href="assets/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
     </header>
-    <section class="home" id="home">
+    <section class="home">
         <div class="left">
             <h1 class="heading">Hello!</h1>
             <p class="about-me">I am <span>Tatva Agarwal</span>,<br> A software, electronics,<br>
@@ -37,15 +45,15 @@
         <div class="details">
             <h1>About Me</h1><br>
             Hi, I am <span>Tatva Agarwal</span>, I am an undergrad student at <a href="https://iiit.ac.in" target="_blank">IIIT Hyderabad</a>. 
-            <br><br>I live in Jagdalpur, Chhattisgarh, India. And I like working on software and electronics projects. I also do 3d design in Blender, Sketching, and Creative coding.
+            <br><br>I live in Jagdalpur, Chhattisgarh, India but born in Bhopal, Madhya Pradesh. And I like working on software and electronics projects. I also do 3d design in Blender, Sketching, and Creative coding.
             <br><br>I like playing Chess, Badminton, and Table Tennis. And watch F1. I like Applied Physics and Chemistry along with Microbiology and Medicine.
         </div>
         <div class="image-slide">
-            <img src="https://placehold.co/600x400" alt="">
-            <img src="https://placehold.co/600x400" alt="">
-            <img src="https://placehold.co/600x400" alt="">
-            <img src="https://placehold.co/600x400" alt="">
-            <img src="https://placehold.co/600x400" alt="">
+            <img src="assets/birthplace/istockphoto-1201246609-1024x1024.jpg" alt="">
+            <img src="assets/birthplace/istockphoto-1226558530-2048x2048.jpg" alt="">
+            <img src="assets/birthplace/istockphoto-1374237760-2048x2048.jpg" alt="">
+            <img src="assets/birthplace/maxresdefault-694265371.jpg" alt="">
+            <img src="assets/birthplace/th-3095857357" alt="">
         </div>
         
     </section>
@@ -97,9 +105,9 @@
     <section class="contact" id="contact">
         <div class="socials">
             <span>Reach me via: </span> 
-            <a href="https://example.com"><i class="fab fa-github"></i></a>
-            <a href="https://example.com"><i class="fab fa-twitter"></i></a>
-            <a href="https://example.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/WinterDew"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/winterdew_dev"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/winterdew.dev"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="email">
             <a href="mailto:winterdew.studio@gmail.com">Mail Me @ winterdew.studio@gmail.com</a>
@@ -108,6 +116,5 @@
     <footer>
         <p>&copy; <span id="footer-date"></span> Tatva Agarwal (WinterdewStudio). Built with passion, care and ☕.</p>
     </footer>
-    <script>document.getElementById("footer-date").innerText = new Date().getFullYear()</script>
 </body>
 </html>
